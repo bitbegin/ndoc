@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'doc',
+  title: 'burc language documents',
   dest: './dist',
   base: '/',
   plugins: ['autobar'],
