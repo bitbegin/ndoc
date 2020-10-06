@@ -128,13 +128,24 @@ as cstring! %%{raw string}%%
 [1u8 2u8 3u8 4u8 5u8 6u8 7u8 8u8]
 ```
 
-### 2.3 type define
+### 2.3 variable
+
+#### word
+
+first: `'a'..'z' | 'A'..'Z' | "_"`
+then: `'0'..'9' | "-" | "*" | "!" | "?" | "."`
+
+#### special word
+
+% + - & | ~ // / << <= <> < >> >= > = ** * ?? _ ..
+
+### 2.4 type define
 
 ```
 type integer! a!
 ```
 
-###  2.4 declare
+###  2.5 declare
 
 ```
 declare integer! a
@@ -144,7 +155,7 @@ declare integer! a: 2 ;-- eq. a: 2
 declare integer! const a: 3   ;-- eq. const a: 3
 ```
 
-#### 2.4.1 push
+#### push
 
 this will copy the source to stack
 
@@ -152,7 +163,7 @@ this will copy the source to stack
 d: as cstring! push "this is a string!"
 ```
 
-###  2.5 pointer
+###  2.6 pointer
 
 `*` = `pointer`
 
@@ -171,28 +182,28 @@ print-line a
 p1/0: 3U 
 ```
 
-### 2.6 string
+### 2.7 string
 
 ```
 "this is a string!"     ;-- eq. * [] "this is a string!"
 ```
 
-### 2.7 array
+### 2.8 array
 
 ```
 [] "hello" = [6 char!][#'h' #'e' #'l' #'l' #'o' #''] 
 ```
 
-### 2.7.1 const
+#### const
 
-#### variable can't be changed
+**variable can't be changed**
 
 ```
 declare integer! b 
 declare * integer! const a: :b
 ```
 
-#### the pointer value can't be changed
+**the pointer value can't be changed**
 
 ```
 declare integer! b: 3
@@ -202,14 +213,14 @@ a: :b
 a/1: 4
 ```
 
-#### both can't be changed
+**both can't be changed**
 
 ```
 declare integer! b: 3
 declare const pointer integer! const a: :b
 ```
 
-### 2.8 struct
+### 2.9 struct
 
 ```
 type struct [
@@ -220,7 +231,7 @@ type struct [
 * struct-a! [1 2]
 ```
 
-#### 2.8.1 align
+#### align
 
 ```
 typedef struct [
@@ -231,7 +242,7 @@ typedef struct [
 ] struct-b!
 ```
 
-### 2.9 enum
+### 2.10 enum
 
 ```
 type enum [
@@ -242,7 +253,7 @@ type enum [
 enum-a!/RED
 ```
 
-### 2.10 code
+### 2.11 code
 
 ```
 ![x + y]
@@ -250,7 +261,7 @@ enum-a!/RED
 declare code! a: ![x + y]
 ```
 
-### 2.11 function
+### 2.12 function
 
 ```
 f: func [a [integer!] b [integer!] return: [integer!]][a + b]
@@ -269,7 +280,7 @@ a: :f
 #stdcall
 ```
 
-### 2.12 scope
+### 2.13 scope
 
 ```
 do [
@@ -296,7 +307,7 @@ loop count [
 
 ```
 
-### 2.13 print format
+### 2.14 print format
 
 ```
 ;-- hex
