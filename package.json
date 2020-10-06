@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/bitbegin/ndoc#readme",
   "devDependencies": {
-    "vuepress": "^1.5.2"
+    "vuepress": "^1.5.2",
+    "vuepress-plugin-autobar": "github:boboidream/vuepress-bar"
   }
 }
