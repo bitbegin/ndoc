@@ -15,10 +15,12 @@
     "doc"
   ],
   "author": "bitbegin",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/bitbegin/ndoc/issues"
   },
   "homepage": "https://github.com/bitbegin/ndoc#readme",
-  "devDependencies": {}
+  "devDependencies": {
+    "vuepress": "^1.5.2"
+  }
 }
