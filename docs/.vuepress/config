@@ -1,6 +1,6 @@
 module.exports = {
   title: 'doc',
   dest: './dist',
-  base: '/burc/',
+  base: '/',
   repo: 'https://github.com/bitbegin/ndoc.git'
 }
