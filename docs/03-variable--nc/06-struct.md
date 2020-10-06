@@ -12,10 +12,10 @@ declare * struct-a! x: * struct-a [1 2]
 ### align
 
 ```
-typedef struct [
+typedef * struct [
   #align 4
   a [integer!]
   b [const * char!]
   c [8 char!]
-] struct-b!
+] struct-p
 ```

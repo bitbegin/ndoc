@@ -9,7 +9,7 @@ declare integer! a: 2 ;-- eq. a: 2
 
 ```
 ;-- stack, can edit
-declare cstring! a: push cstring "this is a string!"
+declare cstring! a: cstring push "this is a string!"
 ;-- stack, can't edit
 declare const cstring! a: const cstring push "this is a string!"
 

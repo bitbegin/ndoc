@@ -1,6 +1,11 @@
 ## string
 
+just pointers
+
 ### cstring! (utf8, 1byte)
+
+similar to `* char!`
+
 ```
 cstring "string"
 ```
@@ -8,11 +13,15 @@ cstring "string"
 
 ### wstring! (unicode 16, 2byte)
 
+similar to `* u16!`
+
 ```
 wstring "string"
 ```
 
 ### string! (unicode, 4byte)
+
+similar to `* u32!`
 
 ```
 string "string"
