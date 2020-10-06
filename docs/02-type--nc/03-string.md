@@ -1,6 +1,7 @@
 ## string
 
 ### cstring! (utf8, 1byte)
+
 ```
 cstring "string"
 ```
