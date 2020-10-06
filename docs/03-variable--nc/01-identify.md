@@ -2,9 +2,8 @@
 
 ### word
 
-allow chars: `'a'..'z' | 'A'..'Z' | "_" | "+" | "-" | "*" | "!" | "?" | "." | '0'..'9'`
-
-`'0'..'9'` not allowed for first place
+first: `'a'..'z' | 'A'..'Z' | "_"`
+then: `'0'..'9' | "-" | "*" | "!" | "?" | "."`
 
 ### special word
 
@@ -15,8 +14,3 @@ allow chars: `'a'..'z' | 'A'..'Z' | "_" | "+" | "-" | "*" | "!" | "?" | "." | '0
 ```
 WHITESPACE | "[" | "]" | "(" | ")" | ";" | "{" | "\"" | "#(" | "![" | "#{" | EOI
 ```
-
-### inner/public variable
-
-* inner variable begin with `_`, like `_a: 0`
-* others are public

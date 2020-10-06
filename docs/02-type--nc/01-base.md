@@ -34,7 +34,7 @@
 
 ### size integer
 
-* isize!/int!/integer!
+* isize!/int!
 * usize!/uint!
 
 ```
@@ -91,7 +91,6 @@
 ## char
 
 ### char!, 1byte
-
 ```
 #'A'
 ```
