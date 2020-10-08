@@ -1,10 +1,26 @@
 ## pointer
 
-`*` = `pointer`
+### pointer = get address
 
 ```
-const * * u8! = const pointer pointer u8!
+:a
+pointer a
+pointer 3
+pointer array [][1 2 3 4]
+```
 
+### pointer!
+
+`*` = `pointer!`
+
+```
+declare x [const pointer! [pointer! u8!]]
+declare x [const * * u8!]
+```
+
+### examples
+
+```
 declare a [u32]
 declare p1 [* u32!] = :a
 declare p2 [* * u32!] = :p1

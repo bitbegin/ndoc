@@ -10,6 +10,13 @@ eq.
 * #[][1 2 3 4]
 ```
 
+### declare
+
+```
+declare a [* #[4 int!]]
+declare a [* [array! [4 int!]]]
+```
+
 ### slice
 
 ```

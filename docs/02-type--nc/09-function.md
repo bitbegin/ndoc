@@ -4,9 +4,7 @@
 
 ```
 f: func [a [integer!] b [integer!] return: [integer!]][a + b]
-
-f: func [a [integer!] b [integer!] return: [integer!]][a + b]
-declare func [a [integer!] b [integer!] return: [integer!]] a
+declare a [function! [a [integer!] b [integer!] return: [integer!]]]
 a: :f
 ```
 
