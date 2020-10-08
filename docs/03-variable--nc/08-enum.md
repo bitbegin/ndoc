@@ -6,6 +6,6 @@ type enum [
   BLUE
 ] enum-a
 
-declare enum-a! x: enum-a/RED
+declare x [enum-a!] = enum-a/RED
 
 ```

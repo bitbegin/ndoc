@@ -5,10 +5,12 @@
 ```
 const * * u8! = const pointer pointer u8!
 
-declare u32! a 
-declare * u32! p1: :a
-declare * * u32! p2: :p1
-p2/value/value: 3U
+declare a [u32]
+declare p1 [* u32!] = :a
+declare p2 [* * u32!] = :p1
+p2/0/0: 3U
+
+poke pick p2 0 0 3U
 
 print-line a
 ;-- 3 

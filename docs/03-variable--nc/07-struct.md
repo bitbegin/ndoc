@@ -6,7 +6,7 @@ type struct [
   b [integer!]
 ] struct-a
 
-declare * struct-a! x: * struct-a [1 2]
+declare x [* struct-a!] = * struct-a [1 2]
 ```
 
 ### align

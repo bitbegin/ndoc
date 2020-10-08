@@ -16,7 +16,3 @@ allow chars: `'a'..'z' | 'A'..'Z' | "_" | "+" | "-" | "*" | "!" | "?" | "." | '0
 WHITESPACE | "[" | "]" | "(" | ")" | ";" | "{" | "\"" | "#(" | "![" | "#{" | EOI
 ```
 
-### inner/public variable
-
-* inner variable begin with `_`, like `_a: 0`
-* others are public

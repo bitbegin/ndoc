@@ -1,5 +1,7 @@
 ## static
 
+maybe not neccessary, array is static by default
+
 ```
 a: cstring static "this is a string!"
 

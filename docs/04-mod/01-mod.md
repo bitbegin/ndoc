@@ -3,11 +3,11 @@
 ```
 ;-- file1.bc
 
-a: 1
-_b: 2
-c: context [
-  x: 1
-  y: 2
+pub a: 1
+b: 2
+pub c: context [
+  pub x: 1
+  pub y: 2
 ]
 ```
 

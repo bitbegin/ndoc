@@ -58,7 +58,7 @@ f #(y: 2 x: 1)
 ### default parameters
 
 ```
-f: func [x: 0 y [integer!] -> [integer!]][x + y]
+f: func [x [integer!] = 0 y [integer!] -> [integer!]][x + y]
 
 f #(y: 2)
 ```
@@ -66,9 +66,9 @@ f #(y: 2)
 ### scope variable in function
 
 ```
-f: function [x: 0 y: 2 -> [integer!]][
+f: function [x [integer!] = 0 y [integer!] = 2 -> [integer!]][
 	do [
-		declare z: 3
+		declare z [integer!] = 3
 		x + y + z
 	]
 ]
