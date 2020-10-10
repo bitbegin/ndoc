@@ -1,20 +1,17 @@
 ## binary
 
-**(array pointer)**
+### value
 
 ```
-#{1234}
+a: #{1234}
+a: [2 u8!] stack #{1234}
+a: [2 u8!] stack #[0x12u8 0x34u8]
 ```
 
-equal
+### pointer
 
 ```
-* #[2 u8!][0x12u8 0x34u8]
-```
-
-### declare
-
-```
-declare a [* [array [2 u8!]]]
-declare a [* #[2 u8!]]
+a: pointer #{1234}
+a: [pointer! [2 u8!]] stack pointer #{1234}
+a: [pointer! [2 u8!]] stack pointer #[0x12u8 0x34u8]
 ```

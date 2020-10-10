@@ -1,12 +1,13 @@
 ## dynamic
 
 ```
-dyn [_ a [int!] b [int!]] dyn-test
-
+dyn-test: dyn [_ a [int!] b [int!]]
 
 ;-- print
-dyn [_] dyn-print
-impl print: dyn-print [self [integer!]][]
+dyn-print: dyn [_ x]
+print: dyn-print [self [integer!]][]
 
-impl print: dyn-print [#variadic count [int!] list [* token!]][] 
+;-- add
+dyn-add: dyn [a _ b]
++: dyn-add [a [int!] b [int!] -> [int!]][a + b]
 ```

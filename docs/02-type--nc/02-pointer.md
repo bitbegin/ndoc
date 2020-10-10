@@ -3,34 +3,29 @@
 ### pointer = get address
 
 ```
-:a
-pointer a
-pointer 3
-pointer array [][1 2 3 4]
+a: pointer 3
 ```
 
 ### pointer!
 
-`*` = `pointer!`
+```
+x: [pointer! [int!]] pointer 3
+y: [pointer! [1 int!]] pointer 3
+
+z: pointer 3			;-- z = y
+```
+
+### null
 
 ```
-declare x [const pointer! [pointer! u8!]]
-declare x [const * * u8!]
+a: [pointer! [int!]] null
 ```
 
-### examples
+### access
 
 ```
-declare a [u32]
-declare p1 [* u32!] = :a
-declare p2 [* * u32!] = :p1
-p2/0/0: 3U
-
-poke pick p2 0 0 3U
-
-print-line a
-;-- 3 
-
-;-- or
-p1/0: 3U 
+p: pointer 1
+p/0: 2
+print pike p 0
+poke p 0 3
 ```

@@ -23,8 +23,8 @@ a    ;-- expand to x + y
 ### token list
 
 ```
-#macro a: func [t #variadic][
-	repeat [++ " push " ++ t ++ " " ++ .]
+#macro a: func [t #block][
+	repeat [++ " push " ++ t ++ " " ++ #.]
 ]
 
 a x [1 2 3 4]

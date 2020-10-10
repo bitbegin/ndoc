@@ -1,32 +1,36 @@
 ## big integer/number
 
-```
-0x1234N
-```
 
-equal
+### big number
 
 ```
-bignum #[2 u8!][0x34u8 0x12u8]
+b: 0x1234N
+b: [bignum! 2] stack 0x1234N
+b: [bignum! 2] stack #[0x34u8 0x12u8]
 ```
 
-type: `[bignum! [2 u8!]]`
+### big integer
+
+type: `[bignum! #[2 u8!]]`
 
 ```
--1234N
+b: -1234N
+b: [bigint! 2] stack -1234N
+b: [bigint! 2] stack #[-1 0xD2u8 0x04u8]
 ```
 
-equal
+type: `[bigint! #[2 u8!]]`
+
+### pointer
 
 ```
--bigint #[2 u8!][0xD2u8 0x04u8]
+b: pointer 0x1234N
+b: [pointer! [bignum! 2]] pointer stack 0x1234N
+b: [pointer! [bignum! 2]] pointer stack #[0x34u8 0x12u8]
 ```
 
-type: `[bigint! [2 u8!]]`
-
-### declare
-
 ```
-declare a [bigint! [2 u8!]]
-declare a [* [bigint! [2 u8!]]]
+b: pointer -1234N
+b: [pointer! [bigint! 2]] pointer stack -1234N
+b: [pointer! [bigint! 2]] pointer stack #[-1 0xD2u8 0x04u8]
 ```

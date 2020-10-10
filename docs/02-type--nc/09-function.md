@@ -25,10 +25,8 @@ a: :f
 /04x
 ;-- float
 /f
-;-- string!
-/s
-;-- char
-/c
+;-- unicode 16
+/u16
 ;-- 16B align
 /b
 /16b
@@ -38,7 +36,7 @@ a: :f
 ;-- unicode 16 string
 /u
 
-a: [32 char!][]
+a: #[32 char!][]
 
 print [/b a]
 
@@ -66,7 +64,7 @@ f #(y: 2)
 ```
 f: function [x [integer!] = 0 y [integer!] = 2 -> [integer!]][
 	do [
-		declare z [integer!] = 3
+		local z: [integer!] 3
 		x + y + z
 	]
 ]
