@@ -107,9 +107,9 @@
 ### value
 
 ```
-a1: [u8!] stack 0u8
-b1: [u8!] alloc 0u8
-c1: [u8!] static 0u8
+a1: #[u8!] stack 0u8
+b1: #[u8!] alloc 0u8
+c1: #[u8!] static 0u8
 
 a2: stack 0u8
 b2: alloc 0u8
@@ -121,9 +121,9 @@ a3: 0u8		;-- a3 = a1 = a2
 ### pointer
 
 ```
-a1: [pointer! [u8!]] pointer stack 0u8
-b1: [pointer! [u8!]] pointer alloc 0u8
-c1: [pointer! [u8!]] pointer static 0u8
+a1: #[pointer! [u8!]] pointer stack 0u8
+b1: #[pointer! [u8!]] pointer alloc 0u8
+c1: #[pointer! [u8!]] pointer static 0u8
 
 a2: pointer stack 0u8
 b2: pointer alloc 0u8
@@ -135,5 +135,5 @@ a3: pointer 0u8		;-- a3 = a1 = a2
 null:
 
 ```
-a: [pointer! u8!] null
+a: #[pointer! u8!] null
 ```

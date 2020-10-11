@@ -6,5 +6,5 @@ enum-a!: enum [
 	BLUE
 ]
 
-x: [enum-a!] enum-a!/RED
+x: #[enum-a!] enum-a!/RED
 ```

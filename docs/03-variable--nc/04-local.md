@@ -2,7 +2,7 @@
 
 ```
 do [
-	local a: [integer!] 0
+	local a: #[integer!] 0
 ]
 
 while [

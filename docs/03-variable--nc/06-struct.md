@@ -11,8 +11,8 @@ struct-b!: struct [
 	b [integer!]
 ]
 
-a: [struct-a!] static #[1 2]
-b: [struct-b!] stack #[[1 2] 3]
+a: #[struct-a!] static [1 2]
+b: #[struct-b!] stack [[1 2] 3]
 ```
 
 ### align

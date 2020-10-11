@@ -1,11 +1,11 @@
 ## type define
 
 ```
-ntype!: type [integer!]
+ntype!: type #[integer!]
 ```
 
 ### pointer type
 
 ```
-ntype!: type [pointer! integer!]
+ntype!: type #[pointer! integer!]
 ```
