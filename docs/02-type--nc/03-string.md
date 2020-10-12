@@ -17,7 +17,7 @@ s4: [#'h' #'e' #'l' #'l' #'o' #'']
 type: `#[pointer! [6 char!]]`
 
 ```
-s1: #[pointer! [6 char!]] stack pointer #utf8 "hello"
+s1: #[pointer! [6 char!]] pointer stack #utf8 "hello"
 s2: #[pointer! [6 char!]] pointer #utf8 "hello"
 s3: pointer #utf8 "hello"
 
@@ -53,7 +53,7 @@ s4: [#"h" #"e" #"l" #"l" #"o" #""]
 type: `#[pointer! [6 uchar!]]`
 
 ```
-s1: #[pointer! [6 uchar!]] stack pointer "hello"
+s1: #[pointer! [6 uchar!]] pointer stack "hello"
 s2: #[pointer! [6 uchar!]] pointer "hello"
 s3: pointer "hello"
 

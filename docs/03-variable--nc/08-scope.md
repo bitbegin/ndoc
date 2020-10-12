@@ -4,7 +4,7 @@
 
 ```
 f: func [][
-	local p: alloc [1 2 3 4]
+	local p: #[int! 4] alloc [1 2 3 4]
 	scope [p][free p]
 	...
 ]
