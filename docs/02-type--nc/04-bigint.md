@@ -1,4 +1,4 @@
-## big integer/number
+## bigint
 
 
 ### big number
