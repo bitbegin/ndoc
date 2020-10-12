@@ -1,7 +1,9 @@
 
-## array value
+## array
 
-### base
+### value
+
+#### base
 
 type: `#[4 int!]`
 
@@ -17,7 +19,7 @@ f2: static [1 2 3 4]
 d3: [1 2 3 4]		;-- d3 = d1 = d2
 ```
 
-### string
+#### string
 
 type: `#[6 char!]`
 
@@ -39,9 +41,9 @@ s3: "hello"
 s4: [#"h" #"e" #"l" #"l" #"o" #""]
 ```
 
-## array pointer
+### pointer
 
-### base
+#### base
 
 ```
 d1: #[pointer [4 int!]] pointer stack [1 2 3 4]
@@ -59,7 +61,7 @@ d3: pointer [1 2 3 4]		;-- d3 = d1 = d2
 a: [pointer int!] pointer stack #[1 2 3 4]
 ```
 
-### string
+#### string
 
 type: `#[pointer! [6 char!]]`
 

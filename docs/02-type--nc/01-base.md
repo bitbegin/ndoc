@@ -1,6 +1,8 @@
-## integers
+## base
 
-### signed integers
+### integers
+
+#### signed integers
 
 * i8!
 * i16!
@@ -16,7 +18,7 @@
 -5i128
 ```
 
-### unsigned integers
+#### unsigned integers
 
 * u8!
 * u16!
@@ -32,7 +34,7 @@
 5u128
 ```
 
-### size integer
+#### size integer
 
 * isize!/int!/integer!
 * usize!/uint!
@@ -48,7 +50,7 @@
 456U
 ```
 
-### hex format
+#### hex format
 
 ```
 0x1234
@@ -61,9 +63,9 @@
 ```
 
 
-## float
+### float
 
-### f32!/float!
+#### f32!/float!
 
 ```
 1.23f32
@@ -73,7 +75,7 @@
 -1.#INFf32
 ```
 
-### f64!/double!
+#### f64!/double!
 
 ```
 1.23
@@ -88,23 +90,23 @@
 -1.#INFf64
 ```
 
-## char
+### char
 
-### char!, 1byte
+#### char!, 1byte
 
 ```
 #'A'
 ```
 
-### uchar!, 4byte
+#### uchar!, 4byte
 
 ```
 #"中"
 ```
 
-## variable
+### variable
 
-### value
+#### value
 
 ```
 a1: #[u8!] stack 0u8
@@ -118,7 +120,7 @@ c2: static 0u8
 a3: 0u8		;-- a3 = a1 = a2
 ```
 
-### pointer
+#### pointer
 
 ```
 a1: #[pointer! [u8!]] pointer stack 0u8
