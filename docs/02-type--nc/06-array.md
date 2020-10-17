@@ -24,18 +24,18 @@ d3: [1 2 3 4]		;-- d3 = d1 = d2
 type: `#[6 char!]`
 
 ```
-s1: #[6 char!] stack #utf8 "hello"
-s2: #[6 char!] #utf8 "hello"
+s1: #[char! 6] stack #utf8 "hello"
+s2: #[char! 6] #utf8 "hello"
 s3: #utf8 "hello"
 
 s4: [#'h' #'e' #'l' #'l' #'o' #'']
 ```
 
-type: `#[6 uchar!]`
+type: `#[uchar! 6]`
 
 ```
-s1: #[6 uchar!] stack "hello"
-s2: #[6 uchar!] "hello"
+s1: #[uchar! 6] stack "hello"
+s2: #[uchar! 6] "hello"
 s3: "hello"
 
 s4: [#"h" #"e" #"l" #"l" #"o" #""]
@@ -46,9 +46,9 @@ s4: [#"h" #"e" #"l" #"l" #"o" #""]
 #### base
 
 ```
-d1: #[pointer [4 int!]] pointer stack [1 2 3 4]
-e1: #[pointer [4 int!]] pointer alloc [1 2 3 4]
-f1: #[pointer [4 int!]] pointer static [1 2 3 4]
+d1: #[pointer [int! 4]] pointer stack [1 2 3 4]
+e1: #[pointer [int! 4]] pointer alloc [1 2 3 4]
+f1: #[pointer [int! 4]] pointer static [1 2 3 4]
 
 d2: pointer stack [1 2 3 4]
 e2: pointer alloc [1 2 3 4]
@@ -66,8 +66,8 @@ a: [pointer int!] pointer stack #[1 2 3 4]
 type: `#[pointer! [6 char!]]`
 
 ```
-s1: #[pointer! [6 char!]] pointer stack #utf8 "hello"
-s2: #[pointer! [6 char!]] pointer #utf8 "hello"
+s1: #[pointer! [char! 6]] pointer stack #utf8 "hello"
+s2: #[pointer! [char! 6]] pointer #utf8 "hello"
 s3: pointer #utf8 "hello"
 
 s4: pointer [#'h' #'e' #'l' #'l' #'o' #'']

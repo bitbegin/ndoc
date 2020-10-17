@@ -36,7 +36,7 @@ a: :f
 ;-- unicode 16 string
 /u
 
-a: #[32 char!][]
+a: #[char! 32][]
 
 print [/b a]
 

@@ -1,5 +1,13 @@
 ## const
 
+### static
+
+```
+a: static #utf8 "this is a string!"
+```
+
+### const
+
 **variable can't be changed**
 
 ```
@@ -20,7 +28,7 @@ const a: const static "this is a string!"
 const a: #[const pointer! uchar!] static "this is a string!"
 ```
 
-### examples
+### const examples
 
 **variable can't be changed**
 
